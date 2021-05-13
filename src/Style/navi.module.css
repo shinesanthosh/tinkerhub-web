@@ -26,4 +26,9 @@
   padding: 15px;
   border-radius: 20px;
   margin: 35px;
+  transition: background 0.3s 0s linear;
+}
+
+.navbox > a:hover {
+  background: rgb(165, 154, 154);
 }
