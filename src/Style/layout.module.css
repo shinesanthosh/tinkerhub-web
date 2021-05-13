@@ -1,0 +1,30 @@
+.navcont {
+  /* border: aqua 2px solid; */
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.datacont {
+  /* border: firebrick solid 2px; */
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.leftal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50%;
+}
+
+.rightal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+.layoutcont {
+  display: block;
+}
