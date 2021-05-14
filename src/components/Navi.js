@@ -11,10 +11,10 @@ const Navi = (props) => {
           <Link href="/events">
             <a>EVENTS</a>
           </Link>
-          <Link href="#">
+          <Link href="/materials">
             <a>MATERIALS</a>
           </Link>
-          <Link href="#">
+          <Link href="/socials">
             <a>SOCIAL</a>
           </Link>
         </div>
@@ -35,7 +35,7 @@ const Navi = (props) => {
               EVENTS
             </a>
           </Link>
-          <Link href="#">
+          <Link href="/materials">
             <a
               className={
                 props.page == '2'
@@ -46,7 +46,7 @@ const Navi = (props) => {
               MATERIALS
             </a>
           </Link>
-          <Link href="#">
+          <Link href="/socials">
             <a
               className={
                 props.page == '3'
