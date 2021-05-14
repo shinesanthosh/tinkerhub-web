@@ -85,3 +85,26 @@
   left: 0;
   margin-left: 0;
 }
+
+.bkimg {
+  position: absolute;
+  left: 10%;
+  top: 15px;
+  display: inline;
+  padding: 15px;
+  height: 60px;
+  width: auto;
+  -webkit-filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+  filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+}
+.bnimg {
+  position: relative;
+  left: 20%;
+  top: 0;
+  display: inline;
+  padding: 15px;
+  height: 100px;
+  width: auto;
+  -webkit-filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+  filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+}

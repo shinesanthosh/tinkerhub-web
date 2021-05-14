@@ -11,9 +11,11 @@ const Navi = (props) => {
           <Link href="/events">
             <a>EVENTS</a>
           </Link>
+
           <Link href="/materials">
             <a>MATERIALS</a>
           </Link>
+
           <Link href="/socials">
             <a>SOCIAL</a>
           </Link>
@@ -22,7 +24,18 @@ const Navi = (props) => {
     )
   } else {
     return (
-      <div>
+      <div className={classes.subcont}>
+        <Link href="/">
+          <a>
+            <img src="/back.png" className={classes.bkimg} />
+          </a>
+        </Link>
+        <Link href="/">
+          <a>
+            <img src="/banner.png" className={classes.bnimg} />
+          </a>
+        </Link>
+
         <div className={classes.navbox2}>
           <Link href="/events">
             <a
@@ -35,6 +48,7 @@ const Navi = (props) => {
               EVENTS
             </a>
           </Link>
+
           <Link href="/materials">
             <a
               className={
@@ -46,6 +60,7 @@ const Navi = (props) => {
               MATERIALS
             </a>
           </Link>
+
           <Link href="/socials">
             <a
               className={
