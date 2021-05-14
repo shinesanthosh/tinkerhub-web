@@ -21,7 +21,7 @@ const Layout = (props) => {
           {props.children}
         </div>
         <div className={[classes.navcont, classes.rightal].join(' ')}>
-          <Navi mode={props.mode} />
+          <Navi mode={props.mode} page={props.page} />
         </div>
       </div>
     )

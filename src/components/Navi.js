@@ -25,13 +25,37 @@ const Navi = (props) => {
       <div>
         <div className={classes.navbox2}>
           <Link href="/events">
-            <a>EVENTS</a>
+            <a
+              className={
+                props.page == '1'
+                  ? [classes.crpage, classes.nr].join(' ')
+                  : classes.nr
+              }
+            >
+              EVENTS
+            </a>
           </Link>
           <Link href="#">
-            <a>MATERIALS</a>
+            <a
+              className={
+                props.page == '2'
+                  ? [classes.crpage, classes.nr].join(' ')
+                  : classes.nr
+              }
+            >
+              MATERIALS
+            </a>
           </Link>
           <Link href="#">
-            <a>SOCIAL</a>
+            <a
+              className={
+                props.page == '3'
+                  ? [classes.crpage, classes.nr].join(' ')
+                  : classes.nr
+              }
+            >
+              SOCIAL
+            </a>
           </Link>
         </div>
       </div>

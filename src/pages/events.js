@@ -5,7 +5,7 @@ import Layout from '../Layout/Layout'
 const Events = () => {
   return (
     <div>
-      <Layout mode="0"></Layout>
+      <Layout mode="0" page="1"></Layout>
     </div>
   )
 }

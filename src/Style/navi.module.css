@@ -47,7 +47,7 @@
   text-align: center;
 }
 
-.navbox2 > a {
+.nr {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -65,6 +65,17 @@
 }
 
 .navbox2 > a:hover {
+  background: #fff;
+  font-size: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  margin-left: 0;
+}
+
+.crpage {
   background: #fff;
   font-size: 40px;
   padding-left: 25px;
