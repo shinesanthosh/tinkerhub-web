@@ -38,14 +38,16 @@
     overflow: hidden;
     padding: 0;
     display: block;
+    min-width: 320px;
   }
 
   .datacont {
     /* border: firebrick solid 2px; */
-    height: 20vh;
+    height: auto;
     overflow: hidden;
     padding: 0;
     display: block;
+    min-width: 320px;
   }
 
   .leftal {
