@@ -9,10 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-        <link rel="icon" href="/icon.png"/>
-        <title>TinkerHUB PCE</title>
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
