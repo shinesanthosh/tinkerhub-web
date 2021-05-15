@@ -34,7 +34,7 @@
 @media screen and (max-width: 899px) {
   .navcont {
     /* border: aqua 2px solid; */
-    height: 80vh;
+    height: 20vh;
     overflow: hidden;
     padding: 0;
     display: block;
@@ -43,7 +43,7 @@
 
   .datacont {
     /* border: firebrick solid 2px; */
-    height: auto;
+    height: 80vh;
     overflow: hidden;
     padding: 0;
     display: block;

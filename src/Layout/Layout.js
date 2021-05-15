@@ -17,11 +17,11 @@ const Layout = (props) => {
   } else {
     return (
       <div className={classes.layoutcont}>
-        <div className={[classes.datacont, classes.leftal].join(' ')}>
-          {props.children}
-        </div>
         <div className={[classes.navcont, classes.rightal].join(' ')}>
           <Navi mode={props.mode} page={props.page} />
+        </div>
+        <div className={[classes.datacont, classes.leftal].join(' ')}>
+          {props.children}
         </div>
       </div>
     )

@@ -166,13 +166,12 @@
   }
 
   .navbox2 {
-    position: absolute;
-    left: 10%;
-    top: 25%;
-    width: 80%;
-    max-width: 300px;
-    bottom: 20%;
-    opacity: 75%;
+    position: relative;
+    left: 1%;
+    right: 1%;
+    top: 2%;
+    height: 0;
+    overflow: hidden;
   }
 
   .nr {
@@ -185,41 +184,30 @@
 
   .navbox2 > a:hover {
     background: #fff;
-    font-size: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 100%;
-    position: relative;
-    left: 0;
-    margin-left: 0;
   }
 
   .crpage {
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 100%;
-    position: relative;
-    left: 0;
-    margin-left: 0;
+    background: #fff;
   }
 
   .bkimg {
     position: absolute;
     left: 10%;
     top: 15px;
-    display: inline;
+    display: none;
     padding: 15px;
     height: 60px;
     width: auto;
   }
   .bnimg {
     position: relative;
-    left: 20%;
+    left: 5%;
+    text-align: center;
     top: 0;
     display: inline;
     padding: 15px;
-    height: 100px;
-    width: auto;
+    width: 90vw;
+    height: auto;
   }
 }
 
