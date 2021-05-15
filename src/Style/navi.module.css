@@ -1,116 +1,237 @@
-.navbox {
-  position: absolute;
-  right: 10%;
-  top: 25%;
-  width: 80%;
-  max-width: 300px;
-  bottom: 20%;
-  background: #fff;
-  opacity: 75%;
-  border-radius: 20px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: -5px 20px 20px rgba(34, 34, 34, 0.37);
+@media only screen and (min-width: 900px) {
+  .navbox {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    width: 80%;
+    max-width: 300px;
+    bottom: 20%;
+    background: #fff;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: -5px 20px 20px rgba(34, 34, 34, 0.37);
+  }
+
+  .navbox > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    font-weight: bold;
+    font-size: 30px;
+    background: rgb(165, 154, 154, 0.34);
+    color: #000;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 35px;
+    transition: 0.3s 0s linear;
+  }
+
+  .navbox > a:hover {
+    background: rgb(165, 154, 154);
+    color: #333;
+  }
+
+  .navbox2 {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 80%;
+    max-width: 300px;
+    bottom: 20%;
+    opacity: 75%;
+    border-radius: 20px;
+    /* padding: 15px; */
+    text-align: center;
+  }
+
+  .nr {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 35px;
+    background: rgba(255, 255, 255, 0.521);
+    color: #000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 35px;
+    width: 75%;
+    transition: 0.3s 0s linear, width 0.3s 0s linear;
+    -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+  }
+
+  .navbox2 > a:hover {
+    background: #fff;
+    font-size: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+  }
+
+  .crpage {
+    background: #fff;
+    font-size: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+  }
+
+  .bkimg {
+    position: absolute;
+    left: 10%;
+    top: 15px;
+    display: inline;
+    padding: 15px;
+    height: 60px;
+    width: auto;
+    -webkit-filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+  }
+  .bnimg {
+    position: relative;
+    left: 20%;
+    top: 0;
+    display: inline;
+    padding: 15px;
+    height: 100px;
+    width: auto;
+    -webkit-filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+  }
 }
 
-.navbox > a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
+@media only screen and (max-width: 899px) {
+  .navbox {
+    position: absolute;
+    right: 2%;
+    left: 2%;
+    /* top: 15%; */
+    bottom: 5%;
+    /* max-width: 300px; */
+    background: rgba(255, 255, 255, 0.308);
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: -5px 20px 20px rgba(34, 34, 34, 0.37);
+  }
 
-  font-weight: bold;
-  font-size: 30px;
-  background: rgb(165, 154, 154, 0.34);
-  color: #000;
-  padding: 15px;
-  border-radius: 20px;
-  margin: 35px;
-  transition: 0.3s 0s linear;
-}
+  .navbox > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
 
-.navbox > a:hover {
-  background: rgb(165, 154, 154);
-  color: #333;
-}
+    font-weight: bold;
+    font-size: 30px;
+    background: rgb(255, 255, 255);
+    color: #000;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 35px;
+    transition: 0.3s 0s linear;
+  }
 
-.navbox2 {
-  position: absolute;
-  left: 10%;
-  top: 25%;
-  width: 80%;
-  max-width: 300px;
-  bottom: 20%;
-  opacity: 75%;
-  border-radius: 20px;
-  /* padding: 15px; */
-  text-align: center;
-}
+  .navbox > a:hover {
+    background: rgb(165, 154, 154);
+    color: #333;
+  }
 
-.nr {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  overflow: hidden;
-  font-weight: bold;
-  font-size: 35px;
-  background: rgba(255, 255, 255, 0.521);
-  color: #000;
-  padding: 20px;
-  border-radius: 20px;
-  margin: 35px;
-  width: 75%;
-  transition: 0.3s 0s linear, width 0.3s 0s linear;
-  -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
-  filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
-}
+  .navbox2 {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 80%;
+    max-width: 300px;
+    bottom: 20%;
+    opacity: 75%;
+    border-radius: 20px;
+    /* padding: 15px; */
+    text-align: center;
+  }
 
-.navbox2 > a:hover {
-  background: #fff;
-  font-size: 40px;
-  padding-left: 25px;
-  padding-right: 25px;
-  width: 100%;
-  position: relative;
-  left: 0;
-  margin-left: 0;
-  -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
-  filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
-}
+  .nr {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 35px;
+    background: rgba(255, 255, 255, 0.521);
+    color: #000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 35px;
+    width: 75%;
+    transition: 0.3s 0s linear, width 0.3s 0s linear;
+    -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+  }
 
-.crpage {
-  background: #fff;
-  font-size: 40px;
-  padding-left: 25px;
-  padding-right: 25px;
-  width: 100%;
-  position: relative;
-  left: 0;
-  margin-left: 0;
-  -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
-  filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
-}
+  .navbox2 > a:hover {
+    background: #fff;
+    font-size: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+  }
 
-.bkimg {
-  position: absolute;
-  left: 10%;
-  top: 15px;
-  display: inline;
-  padding: 15px;
-  height: 60px;
-  width: auto;
-  -webkit-filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
-  filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
-}
-.bnimg {
-  position: relative;
-  left: 20%;
-  top: 0;
-  display: inline;
-  padding: 15px;
-  height: 100px;
-  width: auto;
-  -webkit-filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
-  filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+  .crpage {
+    background: #fff;
+    font-size: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
+  }
+
+  .bkimg {
+    position: absolute;
+    left: 10%;
+    top: 15px;
+    display: inline;
+    padding: 15px;
+    height: 60px;
+    width: auto;
+    -webkit-filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+  }
+  .bnimg {
+    position: relative;
+    left: 20%;
+    top: 0;
+    display: inline;
+    padding: 15px;
+    height: 100px;
+    width: auto;
+    -webkit-filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+    filter: drop-shadow(-5px 20px 5px rgba(34, 34, 34, 0.37));
+  }
 }
