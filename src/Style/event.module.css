@@ -11,17 +11,16 @@
   left: 2%;
   width: 500px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 22px;
 }
 
 .link {
   text-decoration: none;
-  padding-right: 4%;
-  margin-right: 1%;
+  padding-right: 5%;
   background: linear-gradient(to bottom, #ffcd10 0%, #ffcd10 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
-  background-size: 3px 3px;
+  background-size: 4px 4px;
   color: #000;
   text-decoration: none;
   transition: background-size 0.2s;
@@ -34,8 +33,8 @@
 .yellowCircle {
   position: absolute;
   border-radius: 100rem;
-  height: 250px;
-  width: 250px;
+  height: 500px;
+  width: 500px;
   background: linear-gradient(45deg, #e9e9e9, #ffcd10);
   left: -10%;
   bottom: -30%;
@@ -44,8 +43,8 @@
 .greenCircle {
   position: absolute;
   border-radius: 100rem;
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   background: linear-gradient(-45deg, #e9e9e9, #95bf15);
   top: -10%;
   right: -5%;
@@ -54,8 +53,8 @@
 .redCircle {
   position: absolute;
   border-radius: 100rem;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   background: linear-gradient(-45deg, #e9e9e9, #ee1700);
   bottom: 10%;
   right: 10%;
@@ -93,6 +92,19 @@
   animation-duration: 1s;
 }
 
+.register {
+  color: rgb(8, 253, 0);
+  border: solid 2px rgb(8, 253, 0);
+  margin-left: 50%;
+}
+
+.materials {
+  font-size: 8px;
+  color: rgb(3, 135, 223);
+  border: solid 2px rgb(3, 135, 223);
+  margin-left: 65%;
+}
+
 .head {
   display: flex;
   justify-content: center;
@@ -105,8 +117,7 @@
     rgba(255, 205, 16, 0.7),
     rgba(255, 205, 16, 1)
   ) !important;
-  font-size: 17px;
-  text-decoration: underline 2px solid black;
+  font-size: 25px;
   font-weight: bold;
   position: absolute;
 }
@@ -126,46 +137,27 @@
   align-items: center;
   margin: 35px 20px 25px 20px;
   color: whitesmoke;
-  font-size: 10px;
+  font-size: 17px;
   border: solid 1.5px #e6e6e6;
   border-radius: 2rem;
   padding: 10px;
 }
 
-.register,
-.materials {
+.eventLists div button {
   position: absolute;
-  font-size: 8px;
-  padding: 2px;
+  color: rgb(8, 253, 0);
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 78%;
+  border: solid 2px rgb(8, 253, 0);
   background: transparent;
   border-radius: 2rem;
   transition: 0.3s;
 }
 
-.register {
-  color: rgb(8, 253, 0);
-  border: solid 2px rgb(8, 253, 0);
-  margin-left: 50%;
-}
-
-.materials {
-  font-size: 8px;
-  color: rgb(3, 135, 223);
-  border: solid 2px rgb(3, 135, 223);
-  margin-left: 65%;
-}
-
-.register:hover {
-  cursor: pointer;
+.eventLists div button:hover {
   color: black;
   background: rgb(8, 253, 0);
-  font-weight: bold;
-}
-
-.materials:hover {
-  cursor: pointer;
-  color: white;
-  background: rgb(3, 135, 223);
   font-weight: bold;
 }
 
