@@ -1,4 +1,4 @@
-.navbox {
+/* .navbox {
   background: #fff;
   border-radius: 20px;
   padding: 15px;
@@ -149,7 +149,7 @@
     bottom: 5%;
     background: rgba(255, 255, 255, 0.308);
     max-height: 400px;
-    /* min-width: 300px; */
+   min-width: 300px; 
   }
 
   .navbox > a {
@@ -217,4 +217,4 @@
     left: 15%;
     bottom: 10%;
   }
-}
+} */
