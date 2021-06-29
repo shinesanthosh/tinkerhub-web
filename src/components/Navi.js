@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import classes from '../Style/navi.module.css'
+// import classes from '../Style/navi.module.css'
 
 const Navi = (props) => {
   if (props.mode == '1') {

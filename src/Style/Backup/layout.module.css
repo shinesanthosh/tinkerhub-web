@@ -1,13 +1,13 @@
-@media only screen and (min-width: 900px) {
+/* @media only screen and (min-width: 900px) {
   .navcont {
-    /* border: aqua 2px solid; */
+ border: aqua 2px solid; 
     height: 100%;
     overflow: hidden;
     padding: 0;
   }
 
   .datacont {
-    /* border: firebrick solid 2px; */
+ border: firebrick solid 2px; 
     height: 100%;
     overflow: hidden;
     padding: 0;
@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 899px) {
   .navcont {
-    /* border: aqua 2px solid; */
+ border: aqua 2px solid; 
     height: auto;
     overflow: hidden;
     padding: 0;
@@ -42,7 +42,7 @@
   }
 
   .datacont {
-    /* border: firebrick solid 2px; */
+ border: firebrick solid 2px; 
     height: auto;
     overflow: hidden;
     padding: 0;
@@ -67,4 +67,4 @@
   .layoutcont {
     display: block;
   }
-}
+} */

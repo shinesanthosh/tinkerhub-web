@@ -1,4 +1,4 @@
-.cont {
+/* .cont {
   position: absolute;
   right: 5%;
   left: 5%;
@@ -24,37 +24,4 @@
   -webkit-filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
   filter: drop-shadow(-5px 20px 10px rgba(34, 34, 34, 0.37));
   cursor: pointer;
-}
-
-.list {
-  position: inherit;
-  top: 125px;
-  left: 10px;
-  width: 90%;
-}
-.list > li {
-  text-decoration: none;
-  outline: none;
-  font-weight: bold;
-  font-size: 25px;
-  letter-spacing: 1px;
-  position: relative;
-  right: 10;
-  width: 100%;
-  /* margin-right: 50px; */
-  margin-top: 50px;
-  padding: 5px;
-}
-
-.list > li > a {
-  text-decoration: none;
-  outline: none;
-  border-radius: 30px;
-  padding: 15px;
-  background: #26f16abb;
-  color: #000;
-  float: right;
-  position: inherit;
-  bottom: 15px;
-  right: 5%;
-}
+} */

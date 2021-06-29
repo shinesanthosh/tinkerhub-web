@@ -1,4 +1,4 @@
-.cont {
+/* .cont {
   position: absolute;
   right: 5%;
   left: 5%;
@@ -14,8 +14,8 @@
   text-align: center;
   position: inherit;
   top: 0;
-  right: 30%;
-  left: 30%;
+  right: 10%;
+  left: 10%;
   padding: 25px;
   font-weight: bold;
   font-size: 30px;
@@ -41,7 +41,7 @@
   position: relative;
   right: 10;
   width: 100%;
-  /* margin-right: 50px; */
+ margin-right: 50px; 
   margin-top: 50px;
   padding: 5px;
 }
@@ -57,7 +57,4 @@
   position: inherit;
   bottom: 15px;
   right: 5%;
-}
-
-@media only screen and (max-width: 1050px) {
-}
+} */

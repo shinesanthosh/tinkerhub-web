@@ -1,0 +1,380 @@
+.container {
+  height: 100vh;
+}
+
+.underline {
+  position: absolute;
+  top: 100px;
+}
+
+.sideline {
+  opacity: 0;
+}
+
+.yellowCircle,
+.greenCircle,
+.redCircle,
+.aboutYellowCircle,
+.aboutBlueCircle,
+.eventsRedCircle {
+  transition: 1s;
+}
+
+.yellowCircle:hover,
+.greenCircle:hover,
+.redCircle:hover,
+.aboutYellowCircle:hover,
+.aboutBlueCircle:hover,
+.eventsRedCircle:hover {
+  transform: scale(1.2);
+}
+
+/* Circle divs */
+.yellowCircle {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(45deg, #f1efe6, #ffcd10);
+  border-radius: 100rem;
+  left: -150px;
+  bottom: -200px;
+  animation-name: float-in;
+  animation-duration: 2s;
+}
+
+.redCircle {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background: linear-gradient(-45deg, #ff0000, #ead9d9);
+  border-radius: 100rem;
+  right: 150px;
+  bottom: -60px;
+  animation-name: float-in;
+  animation-duration: 2s;
+}
+
+.greenCircle {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(45deg, #95bf15, #fefefe);
+  border-radius: 100rem;
+  right: -130px;
+  top: -130px;
+  animation-name: float-in;
+  animation-duration: 2s;
+}
+
+.aboutYellowCircle {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(45deg, #f1efe6, #ffcd10);
+  border-radius: 100rem;
+  right: -160px;
+  bottom: -200px;
+  animation-name: float-in;
+  animation-duration: 2s;
+}
+
+.aboutBlueCircle {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(45deg, #f1efe6, #05bfce);
+  border-radius: 100rem;
+  left: -160px;
+  bottom: -300px;
+  animation-name: float-in;
+  animation-duration: 2s;
+}
+
+.eventsRedCircle {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(-45deg, #ff0000, #ead9d9);
+  border-radius: 100rem;
+  right: 150px;
+  bottom: -1500px;
+  animation-name: float-in;
+  animation-duration: 2s;
+}
+
+.bgImg {
+  height: 110px;
+  width: 360px;
+  transition: transform 0.2s;
+  animation-name: float-in;
+  animation-duration: 4s;
+}
+
+.bgImg:hover {
+  transform: scale(1.1);
+}
+
+.scroll {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  animation-name: float-in;
+  animation-duration: 4s;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+}
+
+.links {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.aboutUsHeading {
+  font-size: 30px;
+  background: linear-gradient(
+    to bottom,
+    var(--mainColor) 0%,
+    var(--mainColor) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size 0.2s;
+  padding-right: 50px;
+  position: absolute;
+  top: 80px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.aboutUsHeading:hover {
+  background-size: 4px 50px;
+}
+
+.aboutUsHeading.show {
+  opacity: 1;
+}
+
+.aboutText {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  transition: 1s;
+  margin: 30%;
+  opacity: 0;
+}
+
+.aboutText.show {
+  opacity: 1;
+}
+
+.aboutText.show:hover {
+  transform: scale(1.2);
+}
+
+.glass {
+  height: 80vh;
+  width: 70vh;
+  background: linear-gradient(
+    45deg,
+    rgba(233, 233, 233, 0.7),
+    rgba(255, 205, 16, 0.9)
+  );
+  border-radius: 2rem;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: 1s;
+}
+
+.gHeading {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.glass.show {
+  opacity: 1;
+}
+
+/* Animations and other stuffs I just copy pasted form the internet */
+
+@keyframes float-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .yellowCircle {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(45deg, #f1efe6, #ffcd10);
+    border-radius: 100rem;
+    left: -140px;
+    bottom: -150px;
+    animation-name: float-in;
+    animation-duration: 2s;
+  }
+
+  .greenCircle {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(45deg, #95bf15, #fefefe);
+    border-radius: 100rem;
+    right: -80px;
+    top: -80px;
+    animation-name: float-in;
+    animation-duration: 2s;
+  }
+
+  .redCircle {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(-45deg, #ff0000, #ead9d9);
+    border-radius: 100rem;
+    right: 0px;
+    bottom: 60px;
+    animation-name: float-in;
+    animation-duration: 2s;
+  }
+
+  .about {
+    margin: 0px;
+  }
+
+  .bgImg {
+    position: absolute;
+    height: 80px;
+    width: 270px;
+    transition: transform 0.2s;
+    animation-name: float-in;
+    animation-duration: 4s;
+    top: 1px;
+    z-index: 3;
+  }
+
+  .links {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .links {
+    top: 150px;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    font-size: 17px;
+    font-weight: bold;
+    background: rgba(255, 205, 16, 0.7);
+    backdrop-filter: blur(2px);
+    border-radius: 2rem;
+    z-index: 3;
+  }
+
+  .links a {
+    padding-right: 0px;
+  }
+
+  .scroll {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    animation-name: float-in;
+    animation-duration: 4s;
+    animation: down 1.5s infinite;
+    -webkit-animation: down 1.5s infinite;
+  }
+
+  .aboutYellowCircle {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(45deg, #f1efe6, #ffcd10);
+    border-radius: 100rem;
+    right: -160px;
+    bottom: -200px;
+    animation-name: float-in;
+    animation-duration: 2s;
+  }
+
+  .aboutBlueCircle {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(45deg, #f1efe6, #05bfce);
+    border-radius: 100rem;
+    left: -100px;
+    bottom: -150px;
+    animation-name: float-in;
+    animation-duration: 2s;
+  }
+
+  .aboutText {
+    font-size: 14px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    transition: 1s;
+    margin: 30%;
+    opacity: 0;
+  }
+
+  .underline {
+    opacity: 0;
+  }
+
+  .sideline {
+    opacity: 1;
+    position: absolute;
+    left: -10px;
+  }
+}

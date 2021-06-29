@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from '../Style/layout.module.css'
+// import classes from '../Style/layout.module.css'
 import Navi from '../components/Navi'
 
 const Layout = (props) => {
