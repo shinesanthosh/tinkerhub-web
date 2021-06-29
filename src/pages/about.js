@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import Navi from '../components/Navi'
 import Circles from '../components/Circles'
+import MobileNav from '../components/MobileNav'
 
 import classes from '../Style/about.module.css'
 // import Layout from '../Layout/Layout'
@@ -10,7 +11,8 @@ import classes from '../Style/about.module.css'
 const Events = () => {
   return (
     <section className={classes.about}>
-      <Navi />
+      <div className={classes.overlay}></div>
+      <Navi className={classes.nav} />
 
       <p className={classes.title}>About us</p>
       <p className={classes.text}>
@@ -56,34 +58,14 @@ const Events = () => {
         </div>
       </a>
 
-      <div className={classes.mobileNav}>
-        <a href="/">
-          <div className={classes.homeButton}>
-            <img src="nav icons/home.png" alt="" />
+      <MobileNav className={classes.mobileNav} />
+      <Link href="/">
+        <a>
+          <div className={classes.homeMain}>
+            <img src="nav icons/home.png" />
           </div>
         </a>
-        <a href="/about">
-          <div className={classes.aboutButton}>
-            <img src="nav icons/about.png" alt="" />
-          </div>
-        </a>
-        <a href="/events">
-          <div className={classes.eventButton}>
-            <img src="nav icons/event.png" alt="" />
-          </div>
-        </a>
-        <a href="/socials">
-          <div className={classes.socialButton}>
-            <img src="nav icons/social.png" alt="" />
-          </div>
-        </a>
-      </div>
-
-      <a href="/">
-        <div className={classes.homeMain}>
-          <img src="nav icons/home.png" />
-        </div>
-      </a>
+      </Link>
     </section>
   )
 }
