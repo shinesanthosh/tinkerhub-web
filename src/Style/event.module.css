@@ -133,7 +133,7 @@
 .register,
 .materials {
   position: absolute;
-  font-size: 8px;
+
   padding: 5px;
   margin-left: 78%;
   background: transparent;
@@ -143,12 +143,13 @@
 
 .register {
   color: rgb(8, 253, 0);
+  font-size: 15px;
   border: solid 2px rgb(8, 253, 0);
   margin-left: 50%;
 }
 
 .materials {
-  font-size: 8px;
+  font-size: 15px;
   color: rgb(3, 135, 223);
   border: solid 2px rgb(3, 135, 223);
   margin-left: 65%;
