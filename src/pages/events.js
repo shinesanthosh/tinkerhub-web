@@ -1,22 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
 
+import Navi from '../components/Navi'
+import Circles from '../components/Circles'
+
 import classes from '../Style/event.module.css'
-import Layout from '../Layout/Layout'
 
 const Events = () => {
   return (
     <section class={classes.event}>
-      <div class={classes.overlay}></div>
-      <div class={classes.nav}>
-        <a class={classes.link} href="/">Home</a>
-        <a class={classes.link} href="/about">About</a>
-        <a class={classes.link} href="/events">Events</a>
-        <a class={classes.link} href="/socials">Social</a>
-      </div>
-      <div class={classes.yellowCircle}></div>
-      <div class={classes.greenCircle}></div>
-      <div class={classes.redCircle}></div>
+      <Navi />
+
+      <Circles />
 
       <div class={classes.glass}>
         <div class={classes.head}>Events</div>
@@ -33,7 +28,6 @@ const Events = () => {
           </div>
         </div>
       </div>
-
 
       <div class={classes.mobileNav}>
         <a href="/">
@@ -63,7 +57,6 @@ const Events = () => {
           <img src="nav icons/home.png" />
         </div>
       </a>
-
     </section>
   )
 }

@@ -1,23 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
 
+import Navi from '../components/Navi'
+import Circles from '../components/Circles'
 
 import classes from '../Style/social.module.css'
-import Layout from '../Layout/Layout'
 
 const Events = () => {
   return (
     <section class={classes.socials}>
-      <div class={classes.overlay}></div>
-      <div class={classes.nav}>
-        <a class={classes.link} href="/">Home</a>
-        <a class={classes.link} href="/about">About</a>
-        <a class={classes.link} href="/events">Events</a>
-        <a class={classes.link} href="/socials">Social</a>
-      </div>
-      <div class={classes.yellowCircle}></div>
-      <div class={classes.greenCircle}></div>
-      <div class={classes.redCircle}></div>
+      <Navi />
+      <Circles />
 
       <div class={classes.socialDiv}>
         <div class={classes.shead}>
