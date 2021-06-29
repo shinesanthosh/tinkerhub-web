@@ -22,12 +22,12 @@ const Events = () => {
         <div class={classes.head}>Events</div>
         <div class={classes.eventLists}>
           <div class={classes.event0}>
-            <p> ⦾ Introduction to version control</p>
-            <button class={classes.register}>Register</button>
+            <p> - Introduction to version control</p>
+            <button class={classes.register}>Watch</button>
             <button class={classes.materials}>Get Materials</button>
           </div>
           <div class={classes.event0}>
-            <p> ⦾ Python3 Bootcamp</p>
+            <p> - Python3 Bootcamp</p>
             <button class={classes.register}>Register</button>
             <button class={classes.materials}>Get Materials</button>
           </div>
@@ -57,6 +57,13 @@ const Events = () => {
           </div>
         </a>
       </div>
+
+      <a href="/">
+        <div class={classes.homeMain}>
+          <img src="nav icons/home.png" />
+        </div>
+      </a>
+
     </section>
   )
 }
