@@ -20,7 +20,7 @@
   height: 100vh;
 }
 
-.home a {
+.link {
   text-decoration: none;
   padding-right: 5%;
   background: linear-gradient(to bottom, #ffcd10 0%, #ffcd10 100%);
@@ -32,7 +32,7 @@
   transition: background-size 0.2s;
 }
 
-a:hover {
+.link:hover {
   background-size: 4px 50px;
 }
 

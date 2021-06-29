@@ -201,6 +201,10 @@
   opacity: 1;
 }
 
+.mobileNav {
+  visibility: hidden;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -211,11 +215,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-  html,
-  body {
-    position: relative;
-    overflow: hidden;
-  }
   .overlay {
     opacity: 0;
   }

@@ -92,19 +92,6 @@
   animation-duration: 1s;
 }
 
-.register {
-  color: rgb(8, 253, 0);
-  border: solid 2px rgb(8, 253, 0);
-  margin-left: 50%;
-}
-
-.materials {
-  font-size: 8px;
-  color: rgb(3, 135, 223);
-  border: solid 2px rgb(3, 135, 223);
-  margin-left: 65%;
-}
-
 .head {
   display: flex;
   justify-content: center;
@@ -143,21 +130,39 @@
   padding: 10px;
 }
 
-.eventLists div button {
+.register,
+.materials {
   position: absolute;
-  color: rgb(8, 253, 0);
-  font-size: 15px;
+  font-size: 8px;
   padding: 5px;
   margin-left: 78%;
-  border: solid 2px rgb(8, 253, 0);
   background: transparent;
   border-radius: 2rem;
   transition: 0.3s;
 }
 
-.eventLists div button:hover {
+.register {
+  color: rgb(8, 253, 0);
+  border: solid 2px rgb(8, 253, 0);
+  margin-left: 50%;
+}
+
+.materials {
+  font-size: 8px;
+  color: rgb(3, 135, 223);
+  border: solid 2px rgb(3, 135, 223);
+  margin-left: 65%;
+}
+
+.register:hover {
   color: black;
   background: rgb(8, 253, 0);
+  font-weight: bold;
+}
+
+.materials:hover {
+  color: white;
+  background: rgb(3, 135, 223);
   font-weight: bold;
 }
 
