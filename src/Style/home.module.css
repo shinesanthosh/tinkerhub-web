@@ -78,6 +78,9 @@
 .yellowCircle,
 .greenCircle,
 .redCircle {
+  transition: 0.2s;
+  animation-name: fade-in;
+  animation-duration: 3s;
   box-shadow: 8px 4px 26px -13px rgba(0, 0, 0, 0.77);
   -webkit-box-shadow: 8px 4px 26px -13px rgba(0, 0, 0, 0.77);
   -moz-box-shadow: 8px 4px 26px -13px rgba(0, 0, 0, 0.77);

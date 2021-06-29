@@ -1,81 +1,24 @@
 import React from 'react'
 import Link from 'next/link'
-
-// import classes from '../Style/navi.module.css'
+import classes from '../Style/home.module.css'
 
 const Navi = (props) => {
-  if (props.mode == '1') {
-    return (
-      <div>
-        <div className={classes.navbox}>
-          <Link href="/events">
-            <a>EVENTS</a>
-          </Link>
-
-          <Link href="/materials">
-            <a>MATERIALS</a>
-          </Link>
-
-          <Link href="/socials">
-            <a>SOCIAL</a>
-          </Link>
-        </div>
-      </div>
-    )
-  } else {
-    return (
-      <div className={classes.subcont}>
-        <Link href="/">
-          <a>
-            <img src="/back.png" className={classes.bkimg} />
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <img src="/banner.png" className={classes.bnimg} />
-          </a>
-        </Link>
-
-        <div className={classes.navbox2}>
-          <Link href="/events">
-            <a
-              className={
-                props.page == '1'
-                  ? [classes.crpage, classes.nr].join(' ')
-                  : classes.nr
-              }
-            >
-              EVENTS
-            </a>
-          </Link>
-
-          <Link href="/materials">
-            <a
-              className={
-                props.page == '2'
-                  ? [classes.crpage, classes.nr].join(' ')
-                  : classes.nr
-              }
-            >
-              MATERIALS
-            </a>
-          </Link>
-
-          <Link href="/socials">
-            <a
-              className={
-                props.page == '3'
-                  ? [classes.crpage, classes.nr].join(' ')
-                  : classes.nr
-              }
-            >
-              SOCIAL
-            </a>
-          </Link>
-        </div>
-      </div>
-    )
-  }
+  return (
+    <div className={props.className}>
+      <Link href="/">
+        <a className={classes.link}>Home</a>
+      </Link>
+      <Link href="/about">
+        <a className={classes.link}>About</a>
+      </Link>
+      <Link href="/events">
+        <a className={classes.link}>Events</a>
+      </Link>
+      <Link href="/socials">
+        <a className={classes.link}>Social</a>
+      </Link>
+    </div>
+  )
 }
 
 Navi.propTypes = {}

@@ -31,53 +31,6 @@
   background-size: 4px 50px;
 }
 
-.yellowCircle {
-  position: absolute;
-  border-radius: 100rem;
-  height: 500px;
-  width: 500px;
-  background: linear-gradient(45deg, #e9e9e9, #ffcd10);
-  left: -10%;
-  bottom: -30%;
-}
-
-.greenCircle {
-  position: absolute;
-  border-radius: 100rem;
-  height: 250px;
-  width: 250px;
-  background: linear-gradient(-45deg, #e9e9e9, #95bf15);
-  top: -10%;
-  right: -5%;
-}
-
-.redCircle {
-  position: absolute;
-  border-radius: 100rem;
-  height: 150px;
-  width: 150px;
-  background: linear-gradient(-45deg, #e9e9e9, #ee1700);
-  bottom: 10%;
-  right: 10%;
-}
-.yellowCircle,
-.greenCircle,
-.redCircle {
-  transition: 0.2s;
-  animation-name: fade-in;
-  animation-duration: 3s;
-  box-shadow: 8px 4px 26px -13px rgba(0, 0, 0, 0.77);
-  -webkit-box-shadow: 8px 4px 26px -13px rgba(0, 0, 0, 0.77);
-  -moz-box-shadow: 8px 4px 26px -13px rgba(0, 0, 0, 0.77);
-}
-
-.yellowCircle:hover,
-.greenCircle:hover,
-.redCircle:hover,
-.logo:hover {
-  transform: scale(1.2);
-}
-
 .glass {
   height: 75vh;
   width: 85vh;
