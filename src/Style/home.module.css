@@ -23,6 +23,7 @@
 .link {
   text-decoration: none;
   padding-right: 5%;
+  margin-right: 4%;
   background: linear-gradient(to bottom, #ffcd10 0%, #ffcd10 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;

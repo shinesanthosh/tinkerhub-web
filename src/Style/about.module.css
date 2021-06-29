@@ -16,6 +16,7 @@
 .link {
   text-decoration: none;
   padding-right: 5%;
+  margin-right: 4%;
   background: linear-gradient(to bottom, #ffcd10 0%, #ffcd10 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
@@ -205,6 +206,11 @@
   visibility: hidden;
 }
 
+.homeMain {
+  position: absolute;
+  visibility: hidden;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -358,11 +364,25 @@
   .nav {
     visibility: hidden;
   }
+  .homeMain {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    visibility: visible;
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+  }
+
+  .homeMain img {
+    height: 20px;
+    width: 20px;
+  }
   /* mobile nav */
 
   .mobileNav {
     visibility: visible;
-    position: absolute;
+    position: fixed;
     height: 10vh;
     width: 100%;
     background: linear-gradient(

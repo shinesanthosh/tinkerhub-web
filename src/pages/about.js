@@ -82,6 +82,12 @@ const Events = () => {
           </div>
         </a>
       </div>
+
+      <a href="/">
+        <div class={classes.homeMain}>
+          <img src="nav icons/home.png" />
+        </div>
+      </a>
     </section>
   )
 }
