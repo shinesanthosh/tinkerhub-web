@@ -177,6 +177,10 @@
   .overlay {
     opacity: 0;
   }
+  .title {
+    top: 5%;
+  }
+
   .logo {
     position: absolute;
     top: 1%;
