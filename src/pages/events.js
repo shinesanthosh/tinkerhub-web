@@ -19,6 +19,7 @@ const Events = () => {
     axios
       .get(process.env.EVENTENDPOINT)
       .then((res) => {
+        setEventList([])
         res.data.forEach((el, key) => {
           setEventList((prevList) => [
             ...prevList,
@@ -30,7 +31,7 @@ const Events = () => {
   }
 
   useEffect(() => {
-    setEventList([])
+    setEventList(<h3 className={classes.loader}>Loading..</h3>)
     fetchData()
   }, [])
   return (

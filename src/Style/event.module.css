@@ -254,3 +254,8 @@
     width: 20px;
   }
 }
+
+.loader {
+  color: #fff;
+  text-align: center;
+}
