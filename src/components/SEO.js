@@ -24,6 +24,7 @@ const MetData = (props) => {
       <meta property="og:description" content={props.description} />
       <meta
         property="og:image"
+        itemprop="image"
         content="https://tinkerhubpce.vercel.app/icons/logo_icon.jpg"
       />
       <meta property="og:type" content="website" />
