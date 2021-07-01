@@ -7,6 +7,7 @@ import Navi from '../components/Navi'
 import Circles from '../components/Circles'
 import MobileNav from '../components/MobileNav'
 import Event from '../components/Event'
+import SEO from '../components/SEO'
 
 import classes from '../Style/event.module.css'
 
@@ -36,6 +37,10 @@ const Events = () => {
   }, [])
   return (
     <section className={classes.event}>
+      <SEO
+        title="Events"
+        description="Tinkerhub Providence College of Engineering, Chengannur"
+      />
       <div className={classes.overlay}></div>
       <Navi className={classes.nav} />
 

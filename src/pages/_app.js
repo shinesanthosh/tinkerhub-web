@@ -5,7 +5,7 @@ export default function MyApp({Component, pageProps}) {
   return (
     <>
       <Head>
-        <title>TinkerHUB PCE</title>
+        {/* <title>TinkerHUB PCE</title> */}
         <link rel="icon" href="/icon.png" />
       </Head>
       <Component {...pageProps} />

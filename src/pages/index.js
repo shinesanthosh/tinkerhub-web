@@ -2,14 +2,16 @@ import React from 'react'
 
 import classes from '../Style/home.module.css'
 
-import Link from 'next/link'
-
-import Layout from '../Layout/Layout'
 import Navi from '../components/Navi'
+import SEO from '../components/SEO'
 
 const index = () => {
   return (
     <section className={classes.home}>
+      <SEO
+        title=""
+        description="Tinkerhub Providence College of Engineering, Chengannur"
+      />
       <div className={classes.overlay}></div>
       <Navi className={classes.nav} />
 

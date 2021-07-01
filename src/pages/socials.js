@@ -4,12 +4,17 @@ import Link from 'next/link'
 import Navi from '../components/Navi'
 import Circles from '../components/Circles'
 import MobileNav from '../components/MobileNav'
+import SEO from '../components/SEO'
 
 import classes from '../Style/social.module.css'
 
 const Events = () => {
   return (
     <section class={classes.socials}>
+      <SEO
+        title="Socials"
+        description="Tinkerhub Providence College of Engineering, Chengannur"
+      />
       <div className={classes.overlay}></div>
       <Navi className={classes.nav} />
       <Circles />
