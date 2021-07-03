@@ -12,4 +12,4 @@ The website is built using [next.js](https://nextjs.org/) and hosted on [vercel]
 
 ## Contributing
 
-Any modification that is found to be beneficial will be merged after close inspection. Create a PR. We'll review the code and will merge it, if we find it's useful and safe to merge.
+Any modification that is found to be beneficial will be merged after close inspection. Create a PR. We'll review the code and will merge it, if we find it useful and safe to merge.
