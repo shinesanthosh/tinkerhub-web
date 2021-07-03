@@ -87,7 +87,6 @@
 .register,
 .materials {
   position: absolute;
-
   padding: 5px;
   margin-left: 78%;
   background: transparent;
@@ -185,8 +184,7 @@
 
   .yellowCircle:hover,
   .greenCircle:hover,
-  .redCircle:hover,
-  .logo:hover {
+  .redCircle:hover {
     transform: scale(1.2);
   }
 
