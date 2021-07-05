@@ -1,21 +1,30 @@
-require("dotenv").config();
+const path = require('path')
+const withPwa = require('next-pwa')
 
-const path = require("path");
-const Dotenv = require("dotenv-webpack");
+require('dotenv').config()
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
-    webpack: config => {
-        config.plugins = config.plugins || [];
+  webpack: (config) => {
+    config.plugins = config.plugins || []
 
-        config.plugins = [
-            ...config.plugins,
+    config.plugins = [
+      ...config.plugins,
 
-            new Dotenv({
-                path: path.join(__dirname, ".env"),
-                systemvars: true
-            })
-        ];
+      new Dotenv({
+        path: path.join(__dirname, '.env'),
+        systemvars: true,
+      }),
+    ]
 
-        return config;
-    }
-};
+    return config
+  },
+}
+
+module.exports = withPwa({
+  pwa: {
+    dest: 'public',
+    register: true,
+    skipWaiting: true,
+  },
+})

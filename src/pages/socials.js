@@ -9,13 +9,12 @@ import SEO from '../components/SEO'
 import classes from '../Style/social.module.css'
 
 const Events = () => {
-
   const alertFun = () => {
-    alert("Discord Link will be added soon!");
+    alert('Discord Link will be added soon!')
   }
 
   return (
-    <section class={classes.socials}>
+    <section className={classes.socials}>
       <SEO
         title="Socials"
         description="Tinkerhub Providence College of Engineering, Chengannur"
@@ -24,18 +23,18 @@ const Events = () => {
       <Navi className={classes.nav} />
       <Circles />
 
-      <div class={classes.socialDiv}>
-        <div class={classes.shead}>
+      <div className={classes.socialDiv}>
+        <div className={classes.shead}>
           <p>Our Socials</p>
         </div>
-        <div class={classes.sbody}>
+        <div className={classes.sbody}>
           <a target="_blank" href="https://instagram.com/tinkerhub.pce">
             <img src="social/insta.png" alt="instagram" />
           </a>
           <a target="_blank" href="https://twitter.com/tinkerhub_pce">
             <img src="social/twitter.png" alt="Twitter" />
           </a>
-          <a onClick= {alertFun}>
+          <a onClick={alertFun}>
             <img src="social/discord.png" alt="Discord" />
           </a>
         </div>
