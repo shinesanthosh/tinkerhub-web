@@ -4,7 +4,12 @@ const withPwa = require('next-pwa')
 require('dotenv').config()
 const Dotenv = require('dotenv-webpack')
 
-module.exports = {
+module.exports = withPwa({
+  pwa: {
+    dest: 'public',
+    register: true,
+    skipWaiting: true,
+  },
   webpack: (config) => {
     config.plugins = config.plugins || []
 
@@ -19,12 +24,6 @@ module.exports = {
 
     return config
   },
-}
-
-module.exports = withPwa({
-  pwa: {
-    dest: 'public',
-    register: true,
-    skipWaiting: true,
-  },
 })
+
+console.log('Modules: ', module.exports)
