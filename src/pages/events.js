@@ -17,7 +17,6 @@ const Events = () => {
   let update = 0
 
   const fetchData = async () => {
-    console.log('Retreiving from: ', process.env.EVENTENDPOINT)
     axios
       .get(process.env.EVENTENDPOINT)
       .then((res) => {

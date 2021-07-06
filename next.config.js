@@ -25,5 +25,3 @@ module.exports = withPwa({
     return config
   },
 })
-
-console.log('Modules: ', module.exports)
