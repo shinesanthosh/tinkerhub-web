@@ -27,10 +27,6 @@
   transition: background-size 0.2s;
 }
 
-.link:hover {
-  /* background-size: 4px 50px; */
-}
-
 .glass {
   height: 75vh;
   width: 85vh;
@@ -255,5 +251,10 @@
 
 .loader {
   color: #fff;
+  text-align: center;
+}
+
+.loaderr {
+  color: rgb(209, 1, 1);
   text-align: center;
 }

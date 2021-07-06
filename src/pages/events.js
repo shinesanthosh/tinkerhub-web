@@ -28,7 +28,11 @@ const Events = () => {
           ])
         })
       })
-      .catch((e) => console.error('some error occured: ', e))
+      .catch((e) =>
+        setEventList(
+          <h3 className={classes.loaderr}>Some error occured :-|</h3>
+        )
+      )
   }
 
   useEffect(() => {
