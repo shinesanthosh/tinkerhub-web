@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Inp from './Inp'
 import { validateInput } from './formValidator'
+import classes from '../Style/form.module.css'
 
 export class Form extends Component {
   state = {}
@@ -111,7 +112,7 @@ export class Form extends Component {
       this.state.level == this.inputsArray.length - 1 ? false : true
 
     return (
-      <div>
+      <div className={classes.Blahbijj}>
         {this.inputsArray}
         <p>{this.state.validationMessage}</p>
         <button

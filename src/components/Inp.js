@@ -6,7 +6,7 @@ const Inp = props => {
   return (
     <div hidden={props.hidden}>
       <label>{props.label}</label>
-      <input
+      <input className = {classes.inpBox}
         type={props.type}
         name={props.name}
         onChange={props.changeHandler}

@@ -64,7 +64,18 @@ export class Fosc extends Component {
         />
       )
     } else if (this.state.loadStatus === 200) {
-      bodyContent = <h2>Your form is submitted, Thank you for your time 😄</h2>
+      bodyContent = (
+        <>
+          <h2>Your form is submitted, Thank you for your time 😄</h2>
+          <Link href="/">
+            <a>
+              <button>
+                Home
+              </button>
+            </a>
+          </Link>
+        </>
+      )
     } else {
       bodyContent = (
         <>
@@ -82,12 +93,16 @@ export class Fosc extends Component {
     }
 
     return (
-      <section>
+      <section className={classes.formSection}>
+        <Circles />
+        <Navi className={classes.nav} />
         <SEO
           title="Open Source Community Application"
           description="Apply to become a part of the Tinkerhub PCE Open Source Community"
         />
         {bodyContent}
+
+        <MobileNav className={classes.mobileNav} />
       </section>
     )
   }
