@@ -41,6 +41,7 @@
   backdrop-filter: blur(2px);
   border-radius: 2rem;
   transition: 0.5s;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -193,7 +194,7 @@
 }
 
 .formSection input {
-  height: 30px;
+  height: 20px;
   width: 75%;
   border: none;
   margin: 25px 0 0 0;
@@ -213,6 +214,7 @@
   backdrop-filter: blur(2px);
   border-radius: 2rem;
   transition: 0.5s;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
