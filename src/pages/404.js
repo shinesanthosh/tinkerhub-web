@@ -11,7 +11,7 @@ const Notfound = () => {
       <div className={classes.overlay}></div>
       <Navi className={classes.nav} />
 
-      <h3>Oops seems like that page doesn't exist</h3>
+      <h2>Oops seems like that page doesn't exist</h2>
 
       <div className={classes.yellowCircle}></div>
       <div className={classes.greenCircle}></div>
