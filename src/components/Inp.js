@@ -4,7 +4,7 @@ import classes from '../Style/form.module.css'
 
 const Inp = props => {
   return (
-    <div hidden={props.hidden}>
+    <div className = {classes.genDiv} hidden={props.hidden}>
       <label>{props.label}</label>
       <input
         type={props.type}
@@ -12,6 +12,7 @@ const Inp = props => {
         onChange={props.changeHandler}
         value={props.value}
         placeholder={props.placeholder}
+        className={classes.genInp}
       />
     </div>
   )

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Inp from './Inp'
 import { validateInput } from './formValidator'
+import classes from '../Style/form.module.css' 
 
 export class Form extends Component {
   state = {}
@@ -118,6 +119,7 @@ export class Form extends Component {
           onClick={this.nextField}
           hidden={nextBtnHidden}
           disabled={nextBtnHidden}
+          className={classes.genBtnNext}
         >
           Next
         </button>
@@ -125,6 +127,8 @@ export class Form extends Component {
           onClick={this.prevField}
           hidden={prevBtnHidden}
           disabled={prevBtnHidden}
+          className={classes.genBtnPrev}
+
         >
           Prev
         </button>
@@ -132,6 +136,8 @@ export class Form extends Component {
           hidden={sbmtBtnHidden}
           disabled={this.state.sbmtBtnDisabled}
           onClick={this.validateSubmitHandler}
+          className={classes.genBtnSubmit}
+
         >
           Submit
         </button>

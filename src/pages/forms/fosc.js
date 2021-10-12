@@ -12,6 +12,8 @@ import Form from '../../components/Form'
 
 import classes from '../../Style/form.module.css'
 
+
+
 export class Fosc extends Component {
   state = {}
 
@@ -82,12 +84,19 @@ export class Fosc extends Component {
     }
 
     return (
-      <section>
+      <section className={classes.formSec}>
+        <Navi className={classes.nav} />
+        <MobileNav className={classes.mobileNav}/>
+
+        <Circles />
         <SEO
           title="Open Source Community Application"
           description="Apply to become a part of the Tinkerhub PCE Open Source Community"
         />
-        {bodyContent}
+        <div className={classes.genDiv}>
+          {bodyContent}
+        </div>
+        
       </section>
     )
   }
